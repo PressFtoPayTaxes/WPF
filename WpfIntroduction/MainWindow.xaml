@@ -1,0 +1,32 @@
+﻿<Window x:Class="WpfIntroduction.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfIntroduction"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="427"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+     TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+     TextElement.FontWeight="Regular"
+     TextElement.FontSize="13"
+     TextOptions.TextFormattingMode="Ideal"
+     TextOptions.TextRenderingMode="Auto"
+     Background="{DynamicResource MaterialDesignPaper}"
+     FontFamily="{DynamicResource MaterialDesignFont}">
+    <Grid Margin="0,10,0,-10">
+        <materialDesign:Card Padding="32" Margin="39,30,39,0" Height="352">
+            <TextBlock HorizontalAlignment="Left" Margin="110,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24" FontFamily="Times New Roman" FontWeight="Bold" Height="28" Width="48"><Run Text="Info"/><LineBreak/><Run/></TextBlock>
+        </materialDesign:Card>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="173,118,0,0" TextWrapping="Wrap" Text="Игорь" VerticalAlignment="Top" Width="50" FontFamily="Times New Roman" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="173,157,0,0" TextWrapping="Wrap" Text="Скоропад" VerticalAlignment="Top" Width="81" FontFamily="Times New Roman" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="173,196,0,0" TextWrapping="Wrap" Text="SDP-181" VerticalAlignment="Top" Width="70" FontFamily="Times New Roman" FontSize="18" TextChanged="TextBox_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="173,235,0,0" TextWrapping="Wrap" Text="igor_2002_25@mail.ru" VerticalAlignment="Top" Width="175" FontFamily="Times New Roman" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="173,274,0,0" TextWrapping="Wrap" Text="87015286844" VerticalAlignment="Top" Width="104" FontFamily="Times New Roman" FontSize="18"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="103,118,0,0" TextWrapping="Wrap" Text="Имя:" VerticalAlignment="Top" Width="50" FontFamily="Times New Roman" FontSize="18" TextDecorations="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="69,157,0,0" TextWrapping="Wrap" Text="Фамилия:" VerticalAlignment="Top" Width="84" FontFamily="Times New Roman" FontSize="18" TextDecorations="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="90,196,0,0" TextWrapping="Wrap" Text="Группа:" VerticalAlignment="Top" Width="63" FontFamily="Times New Roman" FontSize="18" TextDecorations="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="90,235,0,0" TextWrapping="Wrap" Text="Почта:" VerticalAlignment="Top" Width="63" FontFamily="Times New Roman" FontSize="18" TextDecorations="{x:Null}"/>
+        <TextBox HorizontalAlignment="Left" Height="34" Margin="90,274,0,0" TextWrapping="Wrap" Text="Номер:" VerticalAlignment="Top" Width="63" FontFamily="Times New Roman" FontSize="18" TextDecorations="{x:Null}"/>
+    </Grid>
+</Window>
