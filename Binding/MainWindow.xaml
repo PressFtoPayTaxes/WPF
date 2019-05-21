@@ -1,0 +1,81 @@
+﻿<Window x:Class="Binding.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Binding"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="629.418" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="581*"/>
+            <RowDefinition Height="17*"/>
+        </Grid.RowDefinitions>
+        <TextBlock FontFamily="Times New Roman" FontSize="18" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="DJ Name: " VerticalAlignment="Top" Height="22" Width="79"/>
+        <TextBlock FontFamily="Times New Roman" FontSize="18" HorizontalAlignment="Left" Margin="10,37,0,0" TextWrapping="Wrap" Text="Even Name: " VerticalAlignment="Top" Height="22" Width="90"/>
+        <TextBlock FontFamily="Times New Roman" FontSize="18" HorizontalAlignment="Left" Margin="397,9,0,0" TextWrapping="Wrap" Text="Even Date: " VerticalAlignment="Top" Height="22" Width="90"/>
+        <TextBlock FontFamily="Times New Roman" FontSize="18" HorizontalAlignment="Left" Margin="397,37,0,0" TextWrapping="Wrap" Text="Customer Name: " VerticalAlignment="Top" Height="22" Width="130"/>
+        <TextBlock FontFamily="Times New Roman" FontSize="18" HorizontalAlignment="Left" Margin="10,65,0,0" TextWrapping="Wrap" Text="Payment for hour($): " VerticalAlignment="Top" Height="22" Width="161"/>
+        <TextBlock FontFamily="Times New Roman" FontSize="18" HorizontalAlignment="Left" Margin="397,66,0,0" TextWrapping="Wrap" Text="Hours of work: " VerticalAlignment="Top" Height="22" Width="115"/>
+        <TextBox Name="djNameTextBox" HorizontalAlignment="Left" Height="23" Margin="171,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+        <TextBox Name="evenNameTextBox" HorizontalAlignment="Left" Height="23" Margin="171,37,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166"/>
+        <DatePicker Name="evenDatePicker" HorizontalAlignment="Left" Margin="534,7,0,0" VerticalAlignment="Top" Width="111"/>
+        <TextBox Name="customerNameTextBox" HorizontalAlignment="Left" Height="23" Margin="534,36,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162"/>
+        <TextBox Name="paymentForHourTextBox" HorizontalAlignment="Left" Height="23" Margin="171,65,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="166" TextChanged="PaymentForHourTextBoxTextChanged"/>
+        <TextBox Name="hoursOfWorkTextBox" HorizontalAlignment="Left" Height="23" Margin="534,66,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="162" TextChanged="HoursOfWorkTextBoxTextChanged"/>
+
+        <FlowDocumentPageViewer Name="documentViewer" Margin="0,112,0,32.714">
+            <FlowDocument>
+                <Paragraph TextAlignment="Center">
+                    <Bold>DJ Service Contract</Bold>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="["/>
+                    <Run Text="{Binding ElementName=djNameTextBox, Path=Text}"/>
+                    <Run Text="] hereby agrees to provide the musical entertainment at ["/>
+                    <Run Text="{Binding ElementName=evenNameTextBox, Path=Text}"/>
+                    <Run Text="] on ["/>
+                    <Run Text="{Binding ElementName=evenDatePicker, Path=SelectedDate}"/>
+                    <Run Text="]"/>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="["/>
+                    <Run Text="{Binding ElementName=customerNameTextBox, Path=Text}"/>
+                    <Run Text="] will serve as the point of contact and the individual who will provide payment and logistical information about the event."/>
+                </Paragraph>
+                <Paragraph>
+                    <Bold>Payment</Bold>
+                </Paragraph>
+                <Paragraph>
+                    <Run Text="The rate for these entertainment services is $["/>
+                    <Run Text="{Binding ElementName=paymentForHourTextBox, Path=Text}"/>
+                    <Run Text="] per hour and the DJ is expected to be present for ["/>
+                    <Run Text="{Binding ElementName=hoursOfWorkTextBox, Path=Text}"/>
+                    <Run Text="] hours during this event. The fee for the event is $["/>
+                    <Run Name="totalRateRun" Text=""/>
+                    <Run Text="]."/>
+                </Paragraph>
+                <Paragraph>A 15% deposit will be required at least 5 business days prior to the event. The remaining balance will be due on the day of the event.</Paragraph>
+                <Paragraph>If the customer wishes to cancel the DJ service, a notice of no less than five (5) business days must be provided. After this date, a cancellation will result in the forfeiture of the deposit.</Paragraph>
+                <Paragraph>
+                    <Bold>Music</Bold>
+                </Paragraph>
+                <Paragraph>The DJ will play songs from a pre-selected group of musical offerings. Any special requests should be made on the part of the customer a minimum of five (5) days prior to the event. The DJ will attempt to accommodate all reasonable music requests on the day of the event.</Paragraph>
+                <Paragraph>
+                    <Bold>Equipment Damage</Bold>
+                </Paragraph>
+                <Paragraph>The customer is to hold liability for any damages to the DJ's equipment caused by the negligence or irresponsible behavior of the customer or any people attending the event. The customer will be permitted to make a visual inspection of the equipment prior to the event in order to ensure that all equipment is in working order and free from damage.</Paragraph>
+                <Paragraph>By signing below, both the customer and the DJ acknowledge that they have read and fully understand all terms within this contract.</Paragraph>
+                <Paragraph>
+                    <Run FontSize="12">Customer:______________</Run>
+                    <Run FontSize="12">Date:______________</Run>
+                    <LineBreak/>
+                    <LineBreak/>
+                    <Run FontSize="12">DJ:___________________</Run>
+                    <Run FontSize="12">Date:______________</Run>
+                </Paragraph>
+            </FlowDocument>
+        </FlowDocumentPageViewer>
+        <Button Content="Печать" Margin="324,568,305,10" Grid.RowSpan="2" Click="ButtonClick"/>
+    </Grid>
+</Window>
