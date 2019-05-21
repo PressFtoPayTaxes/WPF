@@ -1,0 +1,16 @@
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\bin\Debug\ControlElementsTemplates.exe.config
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\bin\Debug\ControlElementsTemplates.exe
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\bin\Debug\ControlElementsTemplates.pdb
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\ControlElementsTemplates.csprojAssemblyReference.cache
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\MainWindow.g.cs
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\App.g.cs
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\ControlElementsTemplates_MarkupCompile.cache
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\ControlElementsTemplates_MarkupCompile.lref
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\App.baml
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\MainWindow.baml
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\ControlElementsTemplates.g.resources
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\ControlElementsTemplates.Properties.Resources.resources
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\ControlElementsTemplates.csproj.GenerateResource.cache
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\ControlElementsTemplates.csproj.CoreCompileInputs.cache
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\ControlElementsTemplates.exe
+c:\users\скоропадиг.corp\source\repos\ControlElementsTemplates\ControlElementsTemplates\obj\Debug\ControlElementsTemplates.pdb
