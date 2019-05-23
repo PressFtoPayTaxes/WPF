@@ -1,0 +1,17 @@
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\bin\Debug\StylesAndThemes.exe.config
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\bin\Debug\StylesAndThemes.exe
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\bin\Debug\StylesAndThemes.pdb
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\StylesAndThemes.csprojAssemblyReference.cache
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\MainWindow.g.cs
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\App.g.cs
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\StylesAndThemes_MarkupCompile.cache
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\StylesAndThemes_MarkupCompile.lref
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\LightTheme.baml
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\MainWindow.baml
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\StylesAndThemes.g.resources
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\StylesAndThemes.Properties.Resources.resources
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\StylesAndThemes.csproj.GenerateResource.cache
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\StylesAndThemes.csproj.CoreCompileInputs.cache
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\StylesAndThemes.exe
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\StylesAndThemes.pdb
+C:\Users\СкоропадИг.CORP\source\repos\StylesAndThemes\StylesAndThemes\obj\Debug\DarkTheme.baml

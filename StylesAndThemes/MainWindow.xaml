@@ -1,0 +1,43 @@
+﻿<Window x:Class="StylesAndThemes.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StylesAndThemes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="534.74" Width="718.181" Name="mainWindow">
+    <Window.Resources>
+        <ResourceDictionary Source="LightTheme.xaml"></ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="229*"/>
+            <ColumnDefinition Width="581*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="445*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" Margin="31,15,0,0" TextWrapping="Wrap" Text="Telegram" VerticalAlignment="Top" Height="25" Width="78"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" Margin="34,24,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="16" Width="0"/>
+        <TextBlock HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="DonaldTrump" VerticalAlignment="Top" Height="44" Width="181" TextAlignment="Center"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="25,15,0,0" TextWrapping="Wrap" Text="Donald Trump" VerticalAlignment="Top" Width="109"/>
+        <Separator HorizontalAlignment="Left" Height="11" Margin="-21,219,0,0" Grid.Row="1" VerticalAlignment="Top" Width="445" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Separator.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="90"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Separator.RenderTransform>
+        </Separator>
+        <TextBox Name="messageTextBox" Grid.Column="1" HorizontalAlignment="Left" Height="52" Margin="10,373,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Your message..." VerticalAlignment="Top" Width="412"/>
+        <Button Content="Send" Grid.Column="1" HorizontalAlignment="Left" Margin="434,399,0,0" Grid.Row="1" VerticalAlignment="Top" Width="65" Height="26"/>
+        <CheckBox Content="Dark Theme" Grid.Column="1" HorizontalAlignment="Left" Margin="400,24,0,0" VerticalAlignment="Top" Width="84" Foreground="White" Checked="CheckBoxChecked" Unchecked="CheckBoxUnchecked"/>
+
+
+
+    </Grid>
+</Window>
