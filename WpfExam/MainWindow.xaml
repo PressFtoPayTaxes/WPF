@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfExam.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfExam"
+        mc:Ignorable="d"
+        Title="EarthquakesInfo" Height="525.501" Width="800" ResizeMode="NoResize" Loaded="WindowLoaded" Name="mainWindow">
+    <Window.Resources>
+        <ResourceDictionary Source="EarthquakesStyle.xaml"/>
+    </Window.Resources>
+    <Grid>
+        <DataGrid AutoGenerateColumns="True" Name="dataGrid" Height="367" VerticalAlignment="Top" IsManipulationEnabled="False">
+            <!--<DataGrid.Columns>
+                <DataGridTextColumn Header="Magnitude" Width="*"/>
+                <DataGridTextColumn Header="EpicenterDepth" Width="*"/>
+                <DataGridTextColumn Header="Place" Width="*"/>
+                <DataGridTextColumn Header="Date" Width="*"/>
+            </DataGrid.Columns>-->
+        </DataGrid>
+        <Button Content="GET" Margin="348,413,339,0" Height="32" VerticalAlignment="Top" Template="{DynamicResource GetButtonTemplate}" Click="GetButtonClick"/>
+        <TextBlock Text="Records count:" HorizontalAlignment="Left" Margin="41,392,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBox Name="recordsCountTextBox" Margin="41,413,623,0" TextWrapping="Wrap" Height="32" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
